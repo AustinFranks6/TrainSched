@@ -54,7 +54,4 @@ firebase.database().ref().on("child_added",function(snapshot){
     $("#frequencyDisplay").append("<p>" +snapshot.val().frequency+"</p>")
     $("#timeDisplay").append("<p>" +snapshot.val().time+"</p>")
 
-    let nexArr = moment.unix(nexArr).format("HH:mm");
-    let traintime = moment().hours(timeArr[0]).minutes(timeArr[1]);
-
 })
